@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4628AF6C-81FC-4DB1-9DA8-9E388C0442EF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BaiTap</RootNamespace>
+    <AssemblyName>BaiTap</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.PowerBI.Api, Version=2.0.11.18058, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.PowerBI.Api.2.0.11\lib\portable-net45+win+wpa81+MonoAndroid10+MonoTouch10+xamarinios10+xamarinmac20\Microsoft.PowerBI.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PowerBI.Core, Version=1.1.11.17109, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.PowerBI.Core.1.1.11\lib\net45\Microsoft.PowerBI.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Rest.ClientRuntime, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Rest.ClientRuntime.2.0.1\lib\net45\Microsoft.Rest.ClientRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=4.0.20622.1351, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.4.0.2.206221351\lib\net45\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Bai02\KhachHang.aspx" />
+    <Content Include="Bai03\CapNhatNhanVien_BS4.aspx" />
+    <Content Include="Bai03\WFDemo.aspx" />
+    <Content Include="Content\Icons\Calendar icon.jpg" />
+    <Content Include="Content\Icons\exclamation-mark-icon_red.png" />
+    <Content Include="Content\Icons\math_clear_red.png" />
+    <Content Include="Content\Icons\math_divide_red.png" />
+    <Content Include="Content\Icons\math_minus_blue-jelly.png" />
+    <Content Include="Content\Icons\math_minus_blue.png" />
+    <Content Include="Content\Icons\math_minus_red.png" />
+    <Content Include="Content\Icons\math_multiply_red.png" />
+    <Content Include="Content\Icons\math_plus_blue-jelly.png" />
+    <Content Include="Content\Icons\math_plus_blue.png" />
+    <Content Include="Content\Icons\math_plus_red.png" />
+    <Content Include="Content\Icons\next.jpg" />
+    <Content Include="Content\Icons\prev.jpg" />
+    <Content Include="Content\Icons\question-mark-icon_32.png" />
+    <Content Include="Content\Icons\question-mark-icon_64.png" />
+    <Content Include="Content\Icons\question-mark-icon_red.png" />
+    <Content Include="Content\Icons\undo-arrow_blue.png" />
+    <Content Include="Content\Icons\url.txt" />
+    <Content Include="Content\Photos\Northern_lights1.jpg" />
+    <Content Include="Content\Photos\Northern_lights2.jpg" />
+    <Content Include="Homework\3.3 Phanso\Pheptinhphanso.aspx" />
+    <Content Include="Homework\3_4Phanso_Nangcao\Phanso_NangCao.aspx" />
+    <Content Include="Homework\3_5ThongTinNhanVien\CapNhatNhanVien.aspx" />
+    <Content Include="Homework\4_2_DanhSachMayTinh\QuanLyMayTinh.aspx" />
+    <Content Include="Homework\4_ThuaKe_DaHinh\ThongTinLuongNhanVien.aspx" />
+    <Content Include="Homework\Baitap05\NhapDiemHocSinhLop1.aspx" />
+    <Content Include="Homework\Baitap05\TinhCV_Dientich.aspx" />
+    <Content Include="Homework\Baitap05\TinhDienTichHinhChuNhat.aspx" />
+    <Content Include="Homework\Baitap06\ExEvent01.aspx" />
+    <Content Include="Homework\Giaiphuongtrinh\PhuongtrinhBac1.aspx" />
+    <Content Include="Homework\Nhanviensx\TinhLuongNhanVien.aspx" />
+    <Content Include="Bai04\WFDemo.aspx" />
+    <Content Include="bin\BaiTap.dll" />
+    <Content Include="bin\BaiTap.pdb" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Demo\bando.aspx" />
+    <Content Include="Demo\Default.aspx" />
+    <Content Include="Demo\EX05Bootstrap1.aspx" />
+    <Content Include="Demo\EX05Bootstrap2.aspx" />
+    <Content Include="Demo\EX06HTMLServerControls.aspx" />
+    <Content Include="Demo\EXMultiView.aspx" />
+    <Content Include="Demo\EXTypes.aspx" />
+    <Content Include="bin\BaiTap.dll.config" />
+    <Content Include="Homework\TinhKhoangCach\TinhKhoangCachHaiDiem.aspx" />
+    <Content Include="Image\Icons\exclamation-mark-icon_red.png" />
+    <Content Include="Image\Icons\math_clear_red.png" />
+    <Content Include="Image\Icons\math_divide_red.png" />
+    <Content Include="Image\Icons\math_minus_blue-jelly.png" />
+    <Content Include="Image\Icons\math_minus_blue.png" />
+    <Content Include="Image\Icons\math_minus_red.png" />
+    <Content Include="Image\Icons\math_multiply_red.png" />
+    <Content Include="Image\Icons\math_plus_blue-jelly.png" />
+    <Content Include="Image\Icons\math_plus_blue.png" />
+    <Content Include="Image\Icons\math_plus_red.png" />
+    <Content Include="Image\Icons\next.jpg" />
+    <Content Include="Image\Icons\prev.jpg" />
+    <Content Include="Image\Icons\question-mark-icon_32.png" />
+    <Content Include="Image\Icons\question-mark-icon_64.png" />
+    <Content Include="Image\Icons\question-mark-icon_red.png" />
+    <Content Include="Image\Icons\undo-arrow_blue.png" />
+    <Content Include="Image\Icons\url.txt" />
+    <Content Include="Image\Photos\Northern_lights1.jpg" />
+    <Content Include="Image\Photos\Northern_lights2.jpg" />
+    <Content Include="Image\thethao.jpg" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
+    <Content Include="Scripts\jquery-3.0.0.js" />
+    <Content Include="Scripts\jquery-3.0.0.min.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.min.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.0.0.min.map" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\MyStyle.css" />
+    <Content Include="Demo\EX01Chao.aspx" />
+    <Content Include="Demo\EX02ExternalStyleSheet.aspx" />
+    <Content Include="Demo\EX03DangkyTTKH.aspx" />
+    <Content Include="Demo\EX04Table.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bai02\KhachHang.aspx.cs">
+      <DependentUpon>KhachHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bai02\KhachHang.aspx.designer.cs">
+      <DependentUpon>KhachHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bai03\CapNhatNhanVien_BS4.aspx.cs">
+      <DependentUpon>CapNhatNhanVien_BS4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bai03\CapNhatNhanVien_BS4.aspx.designer.cs">
+      <DependentUpon>CapNhatNhanVien_BS4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bai03\NhanVien.cs" />
+    <Compile Include="Bai03\WFDemo.aspx.cs">
+      <DependentUpon>WFDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bai03\WFDemo.aspx.designer.cs">
+      <DependentUpon>WFDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homework\3.3 Phanso\Phanso.cs" />
+    <Compile Include="Homework\3.3 Phanso\Pheptinhphanso.aspx.cs">
+      <DependentUpon>Pheptinhphanso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homework\3.3 Phanso\Pheptinhphanso.aspx.designer.cs">
+      <DependentUpon>Pheptinhphanso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homework\3_4Phanso_Nangcao\Phanso_NangCao.aspx.cs">
+      <DependentUpon>Phanso_NangCao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homework\3_4Phanso_Nangcao\Phanso_NangCao.aspx.designer.cs">
+      <DependentUpon>Phanso_NangCao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homework\3_5ThongTinNhanVien\35NhanVien.cs" />
+    <Compile Include="Homework\3_5ThongTinNhanVien\CapNhatNhanVien.aspx.cs">
+      <DependentUpon>CapNhatNhanVien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homework\3_5ThongTinNhanVien\CapNhatNhanVien.aspx.designer.cs">
+      <DependentUpon>CapNhatNhanVien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homework\4_2_DanhSachMayTinh\Maytinh.cs" />
+    <Compile Include="Homework\4_2_DanhSachMayTinh\QuanLyMayTinh.aspx.cs">
+      <DependentUpon>QuanLyMayTinh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homework\4_2_DanhSachMayTinh\QuanLyMayTinh.aspx.designer.cs">
+      <DependentUpon>QuanLyMayTinh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homework\4_ThuaKe_DaHinh\40NhanVien.cs" />
+    <Compile Include="Homework\4_ThuaKe_DaHinh\NhanVienVP.cs" />
+    <Compile Include="Homework\4_ThuaKe_DaHinh\ThongTinLuongNhanVien.aspx.cs">
+      <DependentUpon>ThongTinLuongNhanVien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homework\4_ThuaKe_DaHinh\ThongTinLuongNhanVien.aspx.designer.cs">
+      <DependentUpon>ThongTinLuongNhanVien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homework\Baitap05\HinhChuNhat2.cs" />
+    <Compile Include="Homework\Baitap05\HinhVuong2.cs" />
+    <Compile Include="Homework\Baitap05\HocSinhLop1.cs" />
+    <Compile Include="Homework\Baitap05\HocSinhLop6.cs" />
+    <Compile Include="Homework\Baitap05\IHinh2.cs" />
+    <Compile Include="Homework\Baitap05\IHocSinh.cs" />
+    <Compile Include="Homework\Baitap05\NhapDiemHocSinhLop1.aspx.cs">
+      <DependentUpon>NhapDiemHocSinhLop1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homework\Baitap05\NhapDiemHocSinhLop1.aspx.designer.cs">
+      <DependentUpon>NhapDiemHocSinhLop1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homework\Baitap05\TinhCV_Dientich.aspx.cs">
+      <DependentUpon>TinhCV_Dientich.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homework\Baitap05\TinhCV_Dientich.aspx.designer.cs">
+      <DependentUpon>TinhCV_Dientich.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homework\Baitap05\TinhDienTichHinhChuNhat.aspx.cs">
+      <DependentUpon>TinhDienTichHinhChuNhat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homework\Baitap05\TinhDienTichHinhChuNhat.aspx.designer.cs">
+      <DependentUpon>TinhDienTichHinhChuNhat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homework\Baitap06\DelegateLearning.cs" />
+    <Compile Include="Homework\Baitap06\ExEvent01.aspx.cs">
+      <DependentUpon>ExEvent01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homework\Baitap06\ExEvent01.aspx.designer.cs">
+      <DependentUpon>ExEvent01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homework\Baitap06\NhanVien1.cs" />
+    <Compile Include="Homework\Giaiphuongtrinh\GiaiPhuongTrinh.cs" />
+    <Compile Include="Homework\Giaiphuongtrinh\PhuongtrinhBac1.aspx.cs">
+      <DependentUpon>PhuongtrinhBac1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homework\Giaiphuongtrinh\PhuongtrinhBac1.aspx.designer.cs">
+      <DependentUpon>PhuongtrinhBac1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bai04\NhanVien.cs" />
+    <Compile Include="Homework\Nhanviensx\NhanViensx.cs" />
+    <Compile Include="Bai04\NhanVienvp.cs" />
+    <Compile Include="Homework\Nhanviensx\TinhLuongNhanVien.aspx.cs">
+      <DependentUpon>TinhLuongNhanVien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homework\Nhanviensx\TinhLuongNhanVien.aspx.designer.cs">
+      <DependentUpon>TinhLuongNhanVien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bai04\WFDemo.aspx.cs">
+      <DependentUpon>WFDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bai04\WFDemo.aspx.designer.cs">
+      <DependentUpon>WFDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\bando.aspx.cs">
+      <DependentUpon>bando.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demo\bando.aspx.designer.cs">
+      <DependentUpon>bando.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demo\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\EX01Chao.aspx.cs">
+      <DependentUpon>EX01Chao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demo\EX01Chao.aspx.designer.cs">
+      <DependentUpon>EX01Chao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\EX02ExternalStyleSheet.aspx.cs">
+      <DependentUpon>EX02ExternalStyleSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demo\EX02ExternalStyleSheet.aspx.designer.cs">
+      <DependentUpon>EX02ExternalStyleSheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\EX03DangkyTTKH.aspx.cs">
+      <DependentUpon>EX03DangkyTTKH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demo\EX03DangkyTTKH.aspx.designer.cs">
+      <DependentUpon>EX03DangkyTTKH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\EX04Table.aspx.cs">
+      <DependentUpon>EX04Table.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demo\EX04Table.aspx.designer.cs">
+      <DependentUpon>EX04Table.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\EX05Bootstrap1.aspx.cs">
+      <DependentUpon>EX05Bootstrap1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demo\EX05Bootstrap1.aspx.designer.cs">
+      <DependentUpon>EX05Bootstrap1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\EX05Bootstrap2.aspx.cs">
+      <DependentUpon>EX05Bootstrap2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demo\EX05Bootstrap2.aspx.designer.cs">
+      <DependentUpon>EX05Bootstrap2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\EX06HTMLServerControls.aspx.cs">
+      <DependentUpon>EX06HTMLServerControls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demo\EX06HTMLServerControls.aspx.designer.cs">
+      <DependentUpon>EX06HTMLServerControls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\EXMultiView.aspx.cs">
+      <DependentUpon>EXMultiView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demo\EXMultiView.aspx.designer.cs">
+      <DependentUpon>EXMultiView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\EXTypes.aspx.cs">
+      <DependentUpon>EXTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demo\EXTypes.aspx.designer.cs">
+      <DependentUpon>EXTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Homework\TinhKhoangCach\Diem.cs" />
+    <Compile Include="Homework\TinhKhoangCach\TinhKhoangCachHaiDiem.aspx.cs">
+      <DependentUpon>TinhKhoangCachHaiDiem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homework\TinhKhoangCach\TinhKhoangCachHaiDiem.aspx.designer.cs">
+      <DependentUpon>TinhKhoangCachHaiDiem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Bai01\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1440</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1440/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
